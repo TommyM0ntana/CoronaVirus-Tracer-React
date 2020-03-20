@@ -17,7 +17,6 @@ class App extends React.Component {
     deaths: 0,
     countries: []
   };
-
   //set the DidMount which will get the data
   componentDidMount() {
     this.getData();
