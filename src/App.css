@@ -1,5 +1,79 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 15px;
   text-align: center;
+}
+
+.flex {
+  min-height: 30vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.box {
+  min-width: 200px;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 15px;
+  width: 100%;
+}
+
+.box {
+  min-width: 200px;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 15px;
+  width: 100%;
+}
+
+.box.recovered {
+  box-shadow: 2px 2px 3px #888888;
+  background: orange;
+  padding: 15px;
+}
+
+.box.confirmed {
+  box-shadow: 2px 2px 3px #888888;
+  background: rgb(0, 255, 21);
+  padding: 15px;
+}
+.box.deaths {
+  box-shadow: 2px 2px 3px #888888;
+  background: rgb(255, 8, 0);
+  padding: 15px;
+}
+.dropdown {
+  background: gray;
+  border-radius: 20px;
+  height: 30px;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 900px) {
+  .flex {
+    flex-wrap: nowrap;
+  }
+  .box {
+    max-width: 300px;
+    line-height: 1.5;
+  }
+}
+
+/* .App {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  color: black;
 }
 
 .App-logo {
@@ -14,18 +88,108 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  opacity: 0.9;
+  background: #000000; /* fallback for old browsers 
+  background: -webkit-linear-gradient(
+    to right,
+    #e74c3c,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 
+  background: linear-gradient(
+    to right,
+    #e74c3c,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-left: 10px;
+  widows: 100%;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.flex {
+  justify-content: space-evenly;
+  color: black;
+  padding-bottom: 120px;
+  /* background-image: url("https://images.unsplash.com/photo-1584118624012-df056829fbd0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80")
+    no-repeat center center fixed; 
+
+  width: 70%;
+  height: 10%;
+}
+
+.box1 {
+  background: #673ab7; /* fallback for old browsers 
+  background: -webkit-linear-gradient(
+    to right,
+    #512da8,
+    #673ab7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(
+  to right,
+  #512da8,
+  #673ab7
+); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  opacity: 0.8;
+  border-radius: 20px;
+  margin: 10px;
+}
+.box2 {
+
+  background: -webkit-linear-gradient(
+    to right,
+    #8dc26f,
+    #76b852
+  )
+  background: linear-gradient(
+    to right,
+    #8dc26f,
+    #76b852
+  )
+
+  background-color: aliceblue;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  opacity: 0.8;
+  border-radius: 20px;
+  margin: 10px;
+}
+.box3 {
+
+  background: -webkit-linear-gradient(
+    to right,
+    #dc2430,
+    #7b4397
+  )
+  background: linear-gradient(
+    to right,
+    #dc2430,
+    #7b4397
+  ); 
+
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  opacity: 0.8;
+  border-radius: 20px;
+  margin: 10px;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +199,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
